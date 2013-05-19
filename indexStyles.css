@@ -1,0 +1,156 @@
+﻿body,
+header,
+nav,
+ul,
+li,
+div,
+a,
+section,
+form,
+label,
+input {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body {
+  font-family: 'Century Gothic', futura, 'URW Gothic L', Verdana, sans-serif;
+}
+body header {
+  margin: 0 auto;
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+body header span {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid black;
+  background-color: lightblue;
+  font-weight: bold;
+  font-size: 18px;
+}
+body header span a {
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-decoration: none;
+}
+body header #nav-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  padding-bottom: 10px;
+}
+body header #nav-wrap ul {
+  margin-top: 10px;
+  text-align: center;
+}
+body header #nav-wrap ul li {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+body header #nav-wrap ul li:hover {
+  background-color: lightgray;
+}
+body header #nav-wrap ul li:hover > ul {
+  display: block;
+}
+body header #nav-wrap ul li ul {
+  display: none;
+  position: absolute;
+  top: 75%;
+  z-index: 5;
+}
+body header #nav-wrap ul li ul li {
+  display: block;
+  margin-top: 5px;
+  position: relative;
+}
+body header #nav-wrap ul li ul li ul {
+  position: absolute;
+  left: 94%;
+  top: -50%;
+  margin-left: 5px;
+}
+body header #nav-wrap ul li a {
+  padding: 5px 10px;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+body section {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  text-align: center;
+}
+body section header {
+  height: 50px;
+}
+body section header h3 {
+  line-height: 10px;
+  position relative;
+}
+body section form {
+  height: 100px;
+  display: table;
+}
+body section form label {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+}
+body section form label[for="status"] {
+  width: 400px;
+}
+body section form label input[type="radio"] {
+  display: inline;
+}
+body section form input[type="submit"] {
+  position: absolute;
+  width: 150px;
+  padding: 5px 5px;
+  top: 250px;
+  left: 50%;
+  margin-left: -75px;
+}
+#message {
+  position: absolute;
+  top: 270px;
+  left: 600px;
+  font-weight: bold;
+  font-size: 16px;
+}
+#php-table {
+  width: 500px;
+  height: 200px;
+  border: 1px solid black;
+  overflow: scroll;
+}
+#borrowed-table {
+  width: 500px;
+  height: 200px;
+  border: 1px solid black;
+  overflow: scroll;
+}
+
+#php-table table, #borrowed-table table {
+  width: 100%;
+  word-break: hyphenate;
+}
+
+#php-table table thead, #borrowed-table table thead {
+  font-weight: bold;
+}
+
+#php-table table td, #borrowed-table table td {
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
